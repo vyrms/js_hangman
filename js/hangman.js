@@ -88,7 +88,7 @@ var hangman = {
       for(i=0; i<hangman.word.length; i++){
         var xxx = document.createElement("span");
         if(hangman.word[i] == " "){
-          xxx.innerHTML = "　";
+          xxx.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
           xxx.id = "letter" + i;
           hangman.word_element.appendChild(xxx);
           hangman.corrects++;
